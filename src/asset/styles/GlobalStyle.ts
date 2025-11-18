@@ -3,104 +3,61 @@ import reset from "styled-reset";
 
 const Globalstyle = createGlobalStyle`
 ${reset}
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+    font-family: 'SUIT';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+@font-face {
+    font-family: 'SUIT';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
 }
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+@font-face {
+    font-family: 'SUIT';
+    src: url('https://cdn.jsdelivr.net/gh/sun-typeface/SUIT/fonts/static/woff2/SUIT-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+@font-face {
+    font-family: 'SUIT';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
 }
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vanilla:hover {
-  filter: drop-shadow(0 0 2em #3178c6aa);
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+html, body {
+    font-family: ${({ theme }) => theme.fontDefault};
+    font-size: ${({ theme }) => theme.fontSizeDefault};
+    color: ${({ theme }) => theme.fontColor};
+    background-color: ${({ theme }) => theme.backgroundColor};
+    line-height: 1.5;
+    font-weight: ${({ theme }) => theme.fontWeightDefault};
+    min-height: 100vh;
+    margin: 0;
   }
-  a:hover {
-    color: #747bff;
+
+  a {
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
   }
+
   button {
-    background-color: #f9f9f9;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 500;
+    padding: 0.5em 1em;
+    border: 1px solid transparent;
+    transition: border-color 0.3s ease;
   }
-}
-
-
-`
+`;
 
 export default Globalstyle;
