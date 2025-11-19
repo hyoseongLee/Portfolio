@@ -5,8 +5,9 @@ interface ThemeStore {
     toggleTheme: () => void;
 }
 
-export const useThemeStore = create<ThemeStore>((set) => ({
+const useThemeStore = create<ThemeStore>((set) => ({
     isLight: true,
     toggleTheme: () => set((state)=> ({isLight: !state.isLight})),
 }));
 
+export default useThemeStore;

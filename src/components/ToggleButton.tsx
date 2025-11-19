@@ -1,5 +1,5 @@
 import React from 'react';
-import { useThemeStore } from '../hooks/useThemeStore';
+import { useThemeStore } from '../hooks';
 import { MoonStar, Sun } from 'lucide-react';
 import styled from 'styled-components';
 
@@ -8,7 +8,7 @@ const Container = styled.button`
     bottom: 60px;
     right: 50px;
     z-index: 1234;
-    border-radius: 12px;
+    border-radius: 36px;
     padding: 12px;
     border: none;
 `
@@ -20,7 +20,7 @@ const StyledMoonStar = styled(MoonStar)`
     justify-content: center;
     align-items: center;
     font-size: 24px;
-    transition: 0.5s;  
+    transition: 0.5s;
 `
 
 const StyledSun = styled(Sun)`
