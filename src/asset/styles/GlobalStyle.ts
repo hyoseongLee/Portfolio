@@ -33,14 +33,15 @@ ${reset}
     font-style: normal;
 }
 html, body {
-    font-family: ${({ theme }) => theme.fontDefault};
-    font-size: ${({ theme }) => theme.fontSizeDefault};
-    color: ${({ theme }) => theme.fontColor};
-    background-color: ${({ theme }) => theme.backgroundColor};
+    font-family: ${({ theme }) => theme.fontFamily};
+    font-size: ${({ theme }) => theme.fontSize.default};
+    color: ${({ theme }) => theme.color.default};
+    background-color: ${({ theme }) => theme.backgroundColor.default};
     line-height: 1.5;
-    font-weight: ${({ theme }) => theme.fontWeightDefault};
+    font-weight: ${({ theme }) => theme.fontWeight.default};
     min-height: 100vh;
     margin: 0;
+    scroll-behavior: smooth;
   }
 
   a {
@@ -49,6 +50,7 @@ html, body {
     cursor: pointer;
     transition: color 0.3s ease;
   }
+
 
   button {
     cursor: pointer;
