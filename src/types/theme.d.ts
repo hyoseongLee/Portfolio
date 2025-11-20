@@ -2,8 +2,9 @@ export type ColorKey =
     | 'default'
     | 'primary'
     | 'second'
-    | 'defaultText'
+    | 'text'
     | 'menuText'
+    | 'button'
 
 export type BackGroundColorKey =
     | 'default'
@@ -19,6 +20,7 @@ export type FontSizeKey =
 
 export type FontWeightKey =
     | 'default'
+    | 'bold'
 
 export type FontFamilyKey =
     | 'default'

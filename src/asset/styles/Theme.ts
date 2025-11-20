@@ -5,8 +5,9 @@ export const lightTheme: Theme = {
       default: '#000',
       primary: '#07692B',
       second: '#949494',
-      defaultText: '#000',
-      menuText: '#333'
+      text: '#4f8cff',
+      menuText: '#333',
+      button: '#fff',
     },
     fontSize: {
       default: '16px',
@@ -16,13 +17,14 @@ export const lightTheme: Theme = {
     },
     backgroundColor: {
       default: '#fff',
-      second: '#e1e1e1',
+      second: '#333',
       third: '#cfcfcf',
-      contantsBg: '#1D1D1D',
+      contantsBg: '#F6FBFF',
 
     },
     fontWeight: {
       default: '400',
+      bold: '600',
     },
     fontFamily: {
       default: "'SUIT', system-ui, Avenir, Helvetica, Arial, sans-serif",
@@ -35,8 +37,9 @@ export const lightTheme: Theme = {
         default: '#fff',
         primary: '#07692B',
         second: '#949494',
-        defaultText: '#000',
-        menuText: '#fff'
+        text: '#4f8cff',
+        menuText: '#fff',
+        button: '#fff',
     },
     backgroundColor: {
       default: '#000',
